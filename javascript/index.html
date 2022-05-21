@@ -7,25 +7,25 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Bonjour ...</h1>
-    <!-- <script type="text/javascript" src="script.js"></script> -->
-    <!-- <script type="text/javascript" src="script2.js"></script> -->
-    <!-- <script type="text/javascript" src="js/script3.js"></script> -->
-    <script type="text/javascript">
-        
-    //    let maVariable = "Bonjour"
+    <h1 id="header">Bonjour</h1>
 
-    let maVariable = {
-        nom: "Koffi"
-    }
-    
+    <script>
+      let variable1 = prompt("Entrez un premier nombre");
+      let variable2 = prompt("Entrez un second nombre");
+      let variable3 = prompt("Entrez un troisième nombre");
 
-    
-
-
-    console.log(maVariable)
-
+      if (isNaN(variable1)) alert("Vous n'avez pas entré un premier nombre correcte, veuillez réessayer")
+      if (isNaN(variable2)) alert("Vous n'avez pas entré un second nombre correcte, veuillez réessayer")
+      if (isNaN(variable3)) alert("Vous n'avez pas entré un troisième nombre correcte, veuillez réessayer")
+      
+      if( variable1 == variable2 && variable2 == variable3 ){
+        alert("Les trois varibles sont égales")
+      }else if( variable1 == variable2 || variable1 == variable3 || variable2 == variable3  ){
+        alert("Deux d'entre les variables sont égales")
+      }
+      else{
+        alert("Les trois varibles sont différentes")
+      }    
     </script>
   </body>
 </html>
- 
