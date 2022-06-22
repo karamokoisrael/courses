@@ -1,6 +1,9 @@
+dic = {
+    "id": 1,
+    "nom": "koffi",
+    "age": 19
+}
 
 
-
-
-if True and False or True:
-    print("")
+for test in dic:
+    print(test)
